@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const connectDB = async () => {
   try {
-    await mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/taskmate');
+    await mongoose.connect(process.env.MONGODB_URI || 'mongodb:mongodb+srv://taskmate:HUNTS0071234@cluster0.7djwocg.mongodb.net/taskmate?retryWrites=true&w=majority&appName=Cluster0');
     console.log('MongoDB connected');
   } catch (error) {
     console.error('MongoDB connection error:', error);
