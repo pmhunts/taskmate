@@ -6,7 +6,7 @@ import CategoryFilter from './components/CategoryFilter';
 import Header from './components/Header';
 import './App.css';
 
-const API_URL = process.env.REACT_APP_API_URL || 'https://taskmate-0fog.onrender.com';
+const API_URL = process.env.REACT_APP_API_URL || 'https://taskmate-0fog.onrender.com/api';
 
 function App() {
   const [tasks, setTasks] = useState([]);
