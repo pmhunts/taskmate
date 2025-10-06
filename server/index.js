@@ -11,14 +11,11 @@ const PORT = process.env.PORT || 5000;
 
 connectDB();
 
-// Middleware
 app.use(cors());
 app.use(express.json());
 
-// Routes
 app.use('/api/tasks', taskRoutes);
 
-// Optional: Default route
 app.get('/', (req, res) => {
   res.send('Task Mate API is running ✅');
 });

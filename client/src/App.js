@@ -6,7 +6,7 @@ import CategoryFilter from './components/CategoryFilter';
 import Header from './components/Header';
 import './App.css';
 
-const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
+const API_URL = process.env.REACT_APP_API_URL || 'https://taskmate-0fog.onrender.com';
 
 function App() {
   const [tasks, setTasks] = useState([]);
@@ -16,8 +16,6 @@ function App() {
   const [error, setError] = useState(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('');
-
-  // Fetch all tasks
   useEffect(() => {
     const fetchTasks = async () => {
       try {

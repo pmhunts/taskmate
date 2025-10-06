@@ -32,7 +32,6 @@ exports.getTasksByCategory = async (req, res) => {
   }
 };
 
-// Get a single task by ID
 exports.getTaskById = async (req, res) => {
   try {
     const task = await Task.findById(req.params.id);
@@ -43,7 +42,6 @@ exports.getTaskById = async (req, res) => {
   }
 };
 
-// Create a new task
 exports.createTask = async (req, res) => {
   try {
     const newTask = new Task(req.body);
@@ -54,7 +52,6 @@ exports.createTask = async (req, res) => {
   }
 };
 
-// Update an existing task
 exports.updateTask = async (req, res) => {
   try {
     const updatedTask = await Task.findByIdAndUpdate(
@@ -69,7 +66,6 @@ exports.updateTask = async (req, res) => {
   }
 };
 
-// Delete a task
 exports.deleteTask = async (req, res) => {
   try {
     const task = await Task.findByIdAndDelete(req.params.id);
@@ -80,7 +76,6 @@ exports.deleteTask = async (req, res) => {
   }
 };
 
-// Toggle task completion status
 exports.toggleTaskCompletion = async (req, res) => {
   try {
     const task = await Task.findById(req.params.id);
