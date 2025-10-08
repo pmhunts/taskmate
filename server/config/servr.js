@@ -13,7 +13,7 @@ connectDB();
 
 app.use(cors({
   origin: [
-    'https://your-vercel-app.vercel.app',
+    'https://taskmate-0fog.onrender.com',
     'http://localhost:3000'
   ]
 }));
