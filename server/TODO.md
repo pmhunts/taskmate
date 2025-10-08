@@ -1,2 +1,3 @@
-- [x] Load dotenv in index.js
-- [x] Fix db.js to remove duplicate connect
+- [x] Edit index.js to add PORT = process.env.PORT || 5000 and app.listen(PORT, ...)
+- [x] Add root route app.get('/', (req, res) => { res.send('Task Mate API is running ✅'); });
+- [ ] Test the server by running npm start
