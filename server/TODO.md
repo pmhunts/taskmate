@@ -1,0 +1,2 @@
+- [x] Load dotenv in index.js
+- [x] Fix db.js to remove duplicate connect
