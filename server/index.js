@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 5000;
 connectDB();
 app.use(cors({
   origin: [
-    'https://your-vercel-app.vercel.app', // Add your actual Vercel URL here
+    'https://taskmate-gold.vercel.app', // Add your actual Vercel URL here
     'http://localhost:3000'
   ]
 }));
