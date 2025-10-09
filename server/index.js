@@ -10,7 +10,13 @@ const PORT = process.env.PORT || 5000;
 connectDB();
 
 app.use(cors({
-  origin: ['https://taskmate-0fog.onrender.com', 'http://localhost:3000']
+  origin: [
+    'https://taskmate-0fog.onrender.com',
+    'http://localhost:3000',
+    'https://taskmate-4fvc.vercel.app',
+    /\.vercel\.app$/
+  ],
+  credentials: true
 }));
 app.use(express.json());
 app.use('/api/tasks', taskRoutes);
