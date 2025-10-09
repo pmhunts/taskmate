@@ -1,23 +1,24 @@
-require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
+const dotenv = require('dotenv');
 const connectDB = require('./config/db');
 const taskRoutes = require('./routes/taskRoutes');
+
+dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 5000;
 
 connectDB();
 
+// UPDATE THIS CORS SECTION
 app.use(cors({
   origin: [
-    'https://taskmate-0fog.onrender.com',
-    'http://localhost:3000',
-    'https://taskmate-4fvc.vercel.app',
-    /\.vercel\.app$/
-  ],
-  credentials: true
+    'https://your-vercel-app.vercel.app', // Add your actual Vercel URL here
+    'http://localhost:3000'
+  ]
 }));
+
 app.use(express.json());
 app.use('/api/tasks', taskRoutes);
 
