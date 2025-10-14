@@ -1,3 +1,0 @@
-- [x] Edit index.js to add PORT = process.env.PORT || 5000 and app.listen(PORT, ...)
-- [x] Add root route app.get('/', (req, res) => { res.send('Task Mate API is running ✅'); });
-- [x] Server configured for Render deployment (starts on PORT, listens properly)

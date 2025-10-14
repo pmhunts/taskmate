@@ -1,0 +1,15 @@
+# Dependencies
+node_modules/
+/api/node_modules
+
+# Production
+/build
+
+# Environment
+.env
+.env.local
+.env.production.local
+
+# Misc
+.DS_Store
+npm-debug.log*

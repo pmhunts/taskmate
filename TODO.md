@@ -1,0 +1,13 @@
+- [x] Move server/index.js to api/index.js in root
+- [x] Move client/src/ to src/ in root
+- [x] Move client/public/ to public/ in root
+- [x] Move client/vercel.json to root vercel.json
+- [x] Create root package.json with combined dependencies from client and server
+- [x] Update src/App.js to use relative API_URL '/api'
+- [x] Create .env in root with MONGODB_URI placeholder
+- [x] Create .gitignore in root
+- [x] Remove client/ and server/ folders after migration
+- [x] Test build locally
+- [ ] Deploy to Vercel
+- [ ] Add MONGODB_URI to Vercel environment variables
+- [ ] Test deployed app
